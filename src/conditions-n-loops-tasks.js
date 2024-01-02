@@ -403,13 +403,9 @@ function rotateMatrix(matrix) {
 
       const top = res[first][i];
 
-      console.log('left to top');
       res[first][i] = res[last - offset][first];
-      console.log('bottom to left');
       res[last - offset][first] = res[last][last - offset];
-      console.log('right to bottom');
       res[last][last - offset] = res[i][last];
-      console.log('top to right');
       res[i][last] = top;
     }
   }
